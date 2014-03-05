@@ -30,6 +30,8 @@ function prepare() {
 	elif [ "$TYPE" == "linux64" ] ; then
 		cp -Rv $FORMULA_DIR/Makefile.linux64 .
 	else
+    echo "build not needed for $TYPE"
+  fi
 }
 
 # executed inside the lib src dir
